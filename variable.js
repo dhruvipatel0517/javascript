@@ -37,6 +37,8 @@ var temp = 12;
 temp = "number"; // Reassignment
 var temp = "text"; // Redeclaration
 
+
+
 // let temp_a = 24;
 // var temp_a = 24; //you can't redeclar let variable
 
@@ -44,6 +46,7 @@ var temp = "text"; // Redeclaration
 // temp_b = "username" // you can't reassign const 
 
 // Scope (Global , Block , Functional)
+
 
 //  WITH VAR KEYWORD
 var e = 25; // Global Scope
@@ -60,6 +63,7 @@ function abc()
 abc()
 console.log("Outside WITH var KEYWORD : " +e);
 
+console.log("_________________________________________________")
 
 //  WITH VAR KEYWORD
 let f = 25; // Global Scope
@@ -76,6 +80,8 @@ function abc()
 abc()
 console.log("Outside WITH let KEYWORD : " +f);
 
+console.log("_________________________________________________")
+
 // Var vs Let differnce 
 
 // var print Block Scope Value While
@@ -86,8 +92,8 @@ console.log(h);
 var h = 24;
 
 // console.log(g);
-console.log(j);
-let j = 12;
+// console.log(j);
+// let j = 12;
 
 // Hoisting Imapact
 // Hoisting --> when your create a vaiable into js that braek
@@ -99,4 +105,40 @@ var temp_c = 12;
 // temp_d = 12; --> that go to down (means stuck into line 66)
 // if you use console.log before initialization that give you undefined
 
+// EXAMPLE 1 
+// console.log(nm);
+// let nm = "DHRUVI";
 
+
+
+// // EXAMPLE 2 
+// console.log(b1);
+// var b1 = "DHRUVI";
+
+
+// EXAMPLE 3
+// var x = 1;
+// {
+//     var x= 2;
+// }
+// console.log(x);
+
+
+// EXAMPLE 4
+
+// let a1 = 10;
+// {
+//     let a1 = 20;
+//     console.log("Inside:", a1);
+// }
+// console.log("Outside:", a1);
+
+// EXAMPLE 5
+
+const person = 
+{
+    name: "DHRUVI"
+};
+person.name= "user";
+// person = {} ;
+console.log(person.name);
