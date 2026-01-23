@@ -40,3 +40,54 @@ while (j <= 10) {
     console.log("WHILE LOOP :", j);
     j++;
 }
+
+// make it true loop
+// let d = 50;
+// while (d >= 20){
+//     console.log(d);
+//     d--;
+// }
+
+// let c=30;
+// while (c > 20){
+//     console.log(c);
+//     c++;
+// }
+
+// let d= "Hello";
+// while (d>= 20){
+//     console.log(d);
+//     d++;
+// }
+
+// let f = 50;
+// while (f <= 60) {
+//     console.log(f);
+//     f--;
+// }
+
+// let q = 50;
+// while (q <= 60){
+//     console.log(q);
+//     --q;
+// }
+
+// do while loop
+// do {} while (end);
+// start
+// do{
+//code
+//change}
+//while(end);
+
+// let g = 10 ;
+// do {
+//     console.log("do while : ", g);
+//     g++;
+// }while (g <= 20);
+
+// let h = 10;
+// do {
+//     console.log("do while :",h);
+//     h--;
+// } while (h >= 1);
