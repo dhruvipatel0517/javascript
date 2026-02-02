@@ -51,20 +51,21 @@ while (j <= 10) {
 // let c=30;
 // while (c > 20){
 //     console.log(c);
-//     c++;
+//     c--;
 // }
 
-// let d= "Hello";
-// while (d>= 20){
-//     console.log(d);
+// let d= 1;
+// while (d <= 5){
+//     console.log("HELLO");
 //     d++;
 // }
 
-// let f = 50;
-// while (f <= 60) {
-//     console.log(f);
-//     f--;
-// }
+
+let f = 50;
+while (f <= 60) {
+    console.log(f);
+    f--;
+}
 
 // let q = 50;
 // while (q <= 60){
@@ -91,3 +92,57 @@ while (j <= 10) {
 //     console.log("do while :",h);
 //     h--;
 // } while (h >= 1);
+
+// let d = 0;
+// while (d < 20) {
+//     console.log("Hello");
+//     d++;
+// }
+
+// let f1 = 50;
+// while (f1 <= 60) {
+//     console.log(f1);
+//     f1++;
+// }
+
+// let q = 60;
+// while (q >= 1) {
+//     console.log(q);
+//     q--;
+// }
+
+// do while loop
+// do {} while (end);
+// start
+// do{
+// code
+// change}
+// while(end);
+
+let j1 = 12; // start
+do {
+    console.log("do while loop:", j1); // code
+    j1++; // change (condition)
+} while (j1 < 20); // while check after executing code block (end)
+
+let m = 20;
+do {
+    console.log("do while loop:", m);
+    m--;
+} while (m >= 10);
+
+// break
+// for (let k = 1; k <= 201; k++) {
+//     console.log("Loop with break", k);
+//     if (k == "30") {
+//         break;
+//     }
+// }
+
+// continue
+// for (let a = 1; a <= 10; a++) {
+//   if (a === 5) {
+//     continue;
+//   }
+//   console.log(a);
+// }
