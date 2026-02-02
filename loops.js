@@ -34,12 +34,12 @@
 //code
 // change
 //}
-let j = 1;
+// let j = 1;
 
-while (j <= 10) {
-    console.log("WHILE LOOP :", j);
-    j++;
-}
+// while (j <= 10) {
+//     console.log("WHILE LOOP :", j);
+//     j++;
+// }
 
 // make it true loop
 // let d = 50;
@@ -61,11 +61,11 @@ while (j <= 10) {
 // }
 
 
-let f = 50;
-while (f <= 60) {
-    console.log(f);
-    f--;
-}
+// let f = 50;
+// while (f <= 60) {
+//     console.log(f);
+//     f--;
+// }
 
 // let q = 50;
 // while (q <= 60){
@@ -132,17 +132,48 @@ do {
 } while (m >= 10);
 
 // break
-// for (let k = 1; k <= 201; k++) {
-//     console.log("Loop with break", k);
-//     if (k == "30") {
-//         break;
-//     }
-// }
+for (let k = 1; k <= 201; k++) {
+    console.log("Loop with break", k);
+    if (k == 20) {
+        break;
+    }
+}
 
 // continue
-// for (let a = 1; a <= 10; a++) {
-//   if (a === 5) {
-//     continue;
-//   }
-//   console.log(a);
+for (let a = 1; a <= 10; a++) {
+  if (a === 5) {
+    continue;
+  }
+  console.log(a);
+}
+
+
+
+// Example 1:
+
+console.log("Print number from 1 to 10 using a for loop.");
+for (let b1=1;b1<=10;b1++){
+    console.log("Print 1 to 10 number", b1);
+}
+
+// Example 2:
+
+console.log("Print number from 10 to 1 using while loop.");
+let c=10;
+while(c>=1){
+    console.log("Print 10 to 1 number", c);
+    c--;
+}
+
+// Example 3:
+
+console.log("Print even numbers from 1 to 20 using for loop.");
+for (let d = 1; d <= 20; d++) {
+    if (d % 2 === 0) {
+        console.log("Even number:", d);
+    }
+}
+// let d1=2;
+// for (let d1=2 ; d1<=20 ; d1+=2){
+//     console.log("Even number:", d1);
 // }

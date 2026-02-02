@@ -282,8 +282,6 @@ console.log("Matched");
 <p>Why : Becuase breack is not define so.....  Simple Print Message  </p>
 <div>
 
-
-
 <div>
 <h1>Example 2 :</h1>
 <p>Write a function getGrade(score) that:</p>
@@ -298,8 +296,6 @@ console.log("Matched");
 <p>Anything Else Invalid Marks</P>
 <div>
 
-
-
 <div>
 <h1>Example 3 :</h1>
 <p>Rock-Paper-Scissors:</p>
@@ -307,3 +303,164 @@ console.log("Matched");
 <p>paper - rock --> paper</P>
 <p>scissors - paper --> scissors</P>
 <div>
+
+<!--  DATE : 02/02/2026  -->
+
+<div>
+<h1>Example 1:</h1>
+<p>Print number from 1 to 10 using a for loop.</p>
+for (let b1=1;b1<=10;b1++){
+    console.log("Print 1 to 10 number", b1);
+}
+</div>
+
+<div>
+<h1>Example 2:</h1>
+<p>Print number from 10 to 1 using while loop.</p>
+console.log("Print number from 10 to 1 using while loop.");
+let c=10;
+while(c>=1){
+    console.log("Print 10 to 1 number", c);
+    c--;
+}
+</div>
+
+<div>
+<h1>Example 3:</h1>
+<p>Print even numbers from 1 to 20 using for loop.</p>
+<p>for(let i=1; i<=20; i++){
+    if(i%2 ===0){
+    console.log(i);
+    }
+}</p>
+</div>
+
+<div>
+<h1>Example 4:</h1>
+<p>Print odd numbers from 1 to 15 using while loop.</p>
+<p>let i= 1;</p>
+<p>while(i<=15){
+    if(i%2 !==0){ // or (i%2 ===1)
+    console.log(i);
+    }
+    i++;
+}</p>
+</div>
+
+<div>
+<h1>Example 5:</h1>
+<p>Print the multiplication table of 5.</p>
+<p>
+for(let i=1; i<=10; i++){
+    console.log(`5 x ${i} = ${5*i}`);
+}
+</p>
+</div>
+
+<div>
+<h1>Example 6:</h1>
+<p>Find the sum of numbers from 1 to 100 using a loop.</p>
+<p>
+let sum = 0;
+for(let i=1; i<=100; i++){
+    // let sum =0;
+    sum = sum + i;
+    // console.log(sum);
+}
+console.log(sum);
+</p>
+</div>
+
+<div>
+<h1>Example 7:</h1>
+<p>Print all numbers between 1 to 50 that are divisible by 3.</p>
+<p>
+for(let i=1; i<=50; i++){
+    if(i%3 === 0){
+        console.log(i);
+    }
+}
+</p>
+</div>
+
+<div>
+<h1>Example 8:</h1>
+<p>Ask the user for a number and print whether each number from 1 to that number is even or odd.</p>
+<p>
+let num = prompt("give a number");
+for(let i=1; i <=numl i++){
+    if(i%2 ===0){
+        console.log(i, " is even");
+    }else{
+        console.log(i, " is odd");
+    }
+}
+</p>
+</div>
+
+<div>
+<h1>Example 9:</h1>
+<p>Count how many numbers between 1 to 100 are divisible by 3 or 5.</p>
+<p>
+for(let i=1; i<=100; i++){
+    if(i%3 ===0 || i%5 ===0){
+        console.log(i);
+    }
+}
+</p>
+</div>
+
+<div>
+<h1> (Break and Continue)Example 10:</h1>
+<p>Stop at First Multiple of 7</p>
+<p>Write a Loop from 1 to 100 that:</p>
+<p>Prints Each number</p>
+<p>Stop Completely when it finds the first number divisible by 7</p>
+<p>
+for(let i=1; i<=100; i++){
+    console.log(i);
+    if(i%7 ===0){
+        break;
+    }
+}
+</p>
+</div>
+
+<div>
+<h1> (Break and Continue)Example 11:</h1>
+<p>Skip Multiples of 3</p>
+<p>Write a Loop From 1 to 20 that:</p>
+<p>Skip number divisible by 3</p>
+<p>Prints all other numbers</p>
+<p>
+for(let i=1; i<=20; i++){
+    if(i%3 ===0){
+        continue;
+    }
+    console.log(i);
+
+}
+</p>
+</div>
+
+<div>
+<h1> (Break and Continue)Example 12:</h1>
+<p>Print First 5 Odd Numbers</p>
+<p>Write a loop from 1 to 100 that:</p>
+<p>Prints only 5 odd numbers</p>
+<p>Then stops the loop</p>
+<p>Use Both if, continue and a counter + break</p>
+<p>
+count = 0;
+for(let i =1; i<=100; i++){
+    if(i%2 ===1){
+        count++;
+        console.log(i)
+    }
+    console.log(i);
+    if(count ===5){cha
+        break;
+    }
+}
+</p>
+</div>
