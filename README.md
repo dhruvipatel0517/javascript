@@ -698,3 +698,176 @@ total += num;
 <p>Ans and Why</p>
 </div>
  
+<!-- DATE :- 04/02/2016 -->
+
+Q1. push()
+You are building a to-do app. Add a new task 'Buy milk' to the tasks array.
+let tasks = ['Wake up', 'Brush teeth'];
+tasks.push("Bath")
+
+
+Q2. pop()
+Remove the last notification from the notifications array.
+let notifications = ['Email', 'Message', 'Reminder'];
+notifications.pop()
+
+
+Q3. shift()
+A queue system removes the first customer. Remove the first customer.
+let customers = ['Customer1', 'Customer2', 'Customer3'];
+customers.shift()
+
+
+Q4. unshift()
+A new song is added to the beginning of the playlist.
+let playlist = ['Song B', 'Song C'];
+playlist.unshift("Song A")
+
+
+Q5. splice()
+In a classroom list, remove 'Alex' and add 'John' and 'Sara' in the same position.
+let students = ['Mike', 'Alex', 'Emma', 'Sophia'];
+------------------- ans.
+remove alex name student:-
+students.splice(1,1)
+
+alex ni position ma add karva mate:-
+students.splice(1,1,"john","sara")
+
+
+Q6. splice()
+From the menu, remove 2 items starting from index 1.
+let menu = ['Burger', 'Pizza', 'Pasta', 'Salad'];
+------------------- ans.
+menu.splice(1,2)
+
+
+Q7. slice()
+Create a new array that contains only weekend days.
+let days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+------------------- ans.
+let week=days.splice(5,7)
+
+Q8. reverse()
+Reverse the order of levels in a game.
+let levels = ['Easy', 'Medium', 'Hard'];
+------------------- ans.
+levels.reverse()
+
+Q9. sort()
+Sort the scores in ascending order.
+let scores = [45, 12, 78, 34, 89];
+------------------- ans.
+scores.sort()
+[12, 34, 45, 78, 89]
+
+Q10. sort() with numbers
+Sort the prices from lowest to highest.
+let prices = [199, 49, 999, 299, 149];
+------------------- ans.
+[49, 149, 199, 299, 999]
+prices.sort((a,b)=> a-b );
+
+Q11. slice() vs splice()
+From the array, create a new array of the first 3 items WITHOUT changing the original array.
+let products = ['Laptop', 'Phone', 'Tablet', 'Monitor', 'Keyboard'];
+-------------------- ans. 
+let new_pro = products1.slice(0,3)
+['Laptop', 'Phone', 'Tablet']
+
+Q12. splice() complex
+In the array below:
+1. Remove 'Blue'
+2. Add 'Purple' and 'Orange' at the same position
+let colors = ['Red', 'Green', 'Blue', 'Yellow'];
+ans:colors.splice(2, 1, 'Purple', 'Orange')
+----------------- ans.
+colors.splice(2,1,"purple","orange")
+['Red', 'Green', 'purple', 'orange', 'Yellow']
+
+
+Q13. reverse() + push()
+Reverse the array and then add 'Final Step' at the end.
+let steps = ['Step 1', 'Step 2', 'Step 3'];
+------------------ ans.
+steps.reverse()
+steps.reverse().push("Final step")
+['Step 1', 'Step 2', 'Step 3', 'Final step']
+
+
+Q14. sort() strings
+Sort names alphabetically, ignoring case sensitivity.
+let names = ['alice', 'Bob', 'charlie', 'David'];
+------------------- ans.
+ans: names.sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()))
+
+
+Q15. Combination Question
+You are managing a movie watchlist:
+1. Add 'Inception'
+2. Remove the first movie
+3. Sort the list alphabetically
+let movies = ['Avatar', 'Titanic', 'Gladiator'];
+------------------- ans.
+movies.unshift("Inception")
+movies.shift()
+movies.sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()))
+['Avatar', 'Gladiator', 'Titanic']
+
+Q16. splice() return value
+What does the splice method return in this case?
+let nums1 = [1, 2, 3, 4];
+nums1.splice(1, 2);
+------------------- ans.
+[1, 4]
+
+
+Q17. slice() immutability check
+After executing slice, does the original array change?
+let nums2 = [10, 20, 30, 40];
+let result = nums2.slice(1, 3);
+------------------- ans.
+ [10, 20, 30, 40]
+ [20, 30]
+
+
+Q19. reverse() mutation
+After reversing, what happens to the original array reference?
+let letters = ['a', 'b', 'c'];
+let reversedLetters = letters.reverse();
+------------------- ans.
+ ['c', 'b', 'a']
+ ['c', 'b', 'a']
+
+
+Q21. splice() edge case
+What happens if deleteCount is 0?
+let arr = ['x', 'y', 'z'];
+arr.splice(1, 0, 'new');
+------------------- ans.
+['x', 'new', 'y', 'z']
+
+
+
+Q23. slice() negative index
+What elements are returned?
+let values = [100, 200, 300, 400, 500];
+let sliced = values.slice(-3, -1);
+------------------- ans.
+ [100, 200, 300, 400, 500]
+ [300, 400]
+
+
+Q24. splice() vs slice() decision
+Which method would you use if you want to:
+a) Update the original array
+b) Keep the original array unchanged
+------------------- ans.
+
+
+Q25. Chained methods (brain teaser)
+What is the final value of arr?
+let arr2 = [1, 2, 3];
+arr2.push(arr2.shift());
+------------------- ans.
+[2, 3, 1]
