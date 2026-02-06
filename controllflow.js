@@ -1,6 +1,7 @@
 // Control Flow Statements in JavaScript
 
 // If-Else Statement (if, if else, if else-if else)
+  
 // if (condition) {} --> condition true hoy to {} code run
 if (12 < 13) {
   console.log(true);
