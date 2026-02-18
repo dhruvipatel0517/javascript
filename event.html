@@ -12,6 +12,22 @@
             border: 3px solid rgb(15, 8, 207);
             background-color: white;
         }
+
+        .device {
+            text-transform: capitalize;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            border: 3px solid red;
+        }
+
+        .box2 {
+            width: 200px;
+            height: 200px;
+            border: 3px solid red;
+        }
     </style>
 </head>
 
@@ -19,11 +35,38 @@
     <button class="btn">Dark Mode</button>
 
     <button class="btn1">Clicked Me</button>
-    <div class="color-card"></div>
+    <!-- <div class="color-card"></div>
     <button class="btn2">Color Change</button>
+    <br /><br /> -->
+
+    <input type="text" class="text" />
+    <br /><br />
+    
+    <h2>Selected Device: <i class="device">none</i></h2>
+    <select class="sel">
+        <option>Select your Device</option>
+        <option value="phone">Phone</option>
+        <option value="laptop">Laptop</option>
+        <option value="watch">Watch</option>
+        <option value="Tablet">Tablet</option>
+    </select>
+
     <br /><br />
 
-    <input type="text">
+    <div class="box"></div><br>
+
+    Change Background Color : <input type="color" class="bg-inp"><br><br>
+
+    Change Border Color : <input type="color" class="border-inp">
+
+    <form action="">
+        <input type="text" class="keydown">
+        <input type="submit" value="Submit">
+    </form>
+
+    <br><br>
+
+    <div class="box2"></div>
 
     <script src="event.js"></script>
 </body>
