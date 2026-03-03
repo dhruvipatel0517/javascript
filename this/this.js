@@ -119,7 +119,7 @@ console.log(p1);
 
 let obj5 ={
     name:"test10",
-    email:"text@gmail.com",
+    email:"a@a.com",
 }; // save this obj. into tis keyword
 
 function temp_a(){
