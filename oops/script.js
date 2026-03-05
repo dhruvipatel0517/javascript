@@ -4,6 +4,8 @@
 // methods hase, ane pachi tena upyog thi nava nava objects banvani sakiye chhiye tene j
 // kevay chhe Object Oriented Programming
 
+const { use } = require("react");
+
 // blueprint(object kevo dekhase, object ma su method) ---> based on blueprint create objects
 
 // blueprint --> constructor
@@ -54,11 +56,11 @@ CreatePencil.prototype.shape = "round";
 
 class CreatePen {
   constructor(name, price, qty, color) {
-    // what is constructor: constructor  is a special method which 
-    // is called when an object is called when an object is cretaed, it is used to initialize 
+    // what is constructor: constructor  is a special method which
+    // is called when an object is called when an object is cretaed, it is used to initialize
     // the object
-    
-    // why use constructor: constructor is used to intialized the 
+
+    // why use constructor: constructor is used to intialized the
     // object, it is called automatically when an object is created,
     // it is used to set the initial values of the object
 
@@ -77,13 +79,47 @@ class CreatePen {
       document.querySelector("body").appendChild(h1);
 
       // Erase method
-      this.erase = function () {
-        document.querySelectorAll("h1").forEach((text) => {
-          if (text.style.color === this.color) {
-            text.remove();
-          }
-        });
-      };
+      //   this.erase = function () {
+      //     document.querySelectorAll("h1").forEach((text) => {
+      //       if (text.style.color === this.color) {
+      //         text.remove();
+      //       }
+      //     });
+      //   };
     };
   } //blue print
 }
+
+let pen = new CreatePen("cello", 160, 10, "green");
+let pen1 = new CreatePen("reynold", 200, 10, "red");
+// extends ---> super
+// create a new class that hold old class value and also have some new values
+// copy old class and add new value
+
+class User {
+  constructor(name, email, password) {
+    this.name = name;
+    this.email = email;
+    this.password = password;
+    this.role = "user";
+  }
+}
+
+let user = new User("test", "test@gmail.com", "abc@123");
+console.log("user", user);
+
+class admin extends User {
+  constructor(name, email, password, rights) {
+    super(name, email, password); // extends class contructor --> super
+    this.role = "admin";
+    this.rights=rights;
+  }
+}
+
+let admin = new admin(
+  "admin",
+  "admin@gmail.com",
+  "abc@123",
+  "delete user, edit user , create user",
+);
+console.log(admin);
