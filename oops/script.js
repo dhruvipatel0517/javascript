@@ -3,9 +3,6 @@
 // dar vakhat blueprint banavo ke objectrit is kevo dekhase ane shu properties ane
 // methods hase, ane pachi tena upyog thi nava nava objects banvani sakiye chhiye tene j
 // kevay chhe Object Oriented Programming
-
-const { use } = require("react");
-
 // blueprint(object kevo dekhase, object ma su method) ---> based on blueprint create objects
 
 // blueprint --> constructor
@@ -108,7 +105,7 @@ class User {
 let user = new User("test", "test@gmail.com", "abc@123");
 console.log("user", user);
 
-class admin extends User {
+class Admin extends User {
   constructor(name, email, password, rights) {
     super(name, email, password); // extends class contructor --> super
     this.role = "admin";
@@ -116,10 +113,11 @@ class admin extends User {
   }
 }
 
-let admin = new admin(
+let admin = new Admin(
   "admin",
   "admin@gmail.com",
   "abc@123",
   "delete user, edit user , create user",
 );
 console.log(admin);
+
