@@ -1,36 +1,93 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- tailwind CSS -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create A Card</title>
+    <!-- tailwind css -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
+  </head>
+  <body
+    class="bg-gradient-to-br from-blue-100 via-purple-100 to-pink-100 min-h-screen"
+  >
+    <form autocomplete="off"
+      class="bg-white/90 backdrop-blur rounded-2xl p-8 mb-12 w-full max-w-lg mx-auto mt-10 border border-blue-100"
+    >
+      <h1 class="text-center text-5xl text-blue-950 mb-5 font-semibold">
+        Add User
+      </h1>
+      <div class="mb-5">
+        <label class="text-gray-500 mb-2 font-medium block" for="name"
+          >Name</label
+        >
+        <input
+          required
+          minlength="2"
+          class="outline-none focus:outline-none border border-blue-100 px-4 py-2 w-full rounded-lg focus:ring-2 focus:ring-blue-400"
+          type="text"
+          name="name"
+          placeholder="Give your Name"
+        />
+      </div>
+      <div class="mb-5">
+        <label class="text-gray-500 mb-2 font-medium block" for="name"
+          >Role</label
+        >
+        <input
+          required
+          minlength="2"
+          class="outline-none focus:outline-none border border-blue-100 px-4 py-2 w-full rounded-lg focus:ring-2 focus:ring-blue-400"
+          type="text"
+          name="role"
+          placeholder="Enter Your Role"
+        />
+      </div>
+      <div class="mb-5">
+        <label class="text-gray-500 mb-2 font-medium block" for="name"
+          >Bio</label
+        >
+        <input
+          required
+          minlength="2"
+          class="outline-none focus:outline-none border border-blue-100 px-4 py-2 w-full rounded-lg focus:ring-2 focus:ring-blue-400"
+          type="text"
+          name="bio"
+          placeholder="Write Somthing About you........"
+        />
+      </div>
+      <div class="mb-5">
+        <label class="text-gray-500 mb-2 font-medium block" for="name"
+          >Image URL</label
+        >
+        <input
+          required
+          minlength="2"
+          class="outline-none focus:outline-none border border-blue-100 px-4 py-2 w-full rounded-lg focus:ring-2 focus:ring-blue-400"
+          type="text"
+          name="img"
+          placeholder="place you image url here"
+        />
+      </div>
 
-<body class="bg-gradient-to-br from-blue-300 via-purple-300 to-pink-300 min-h-screen">
-        <form class="bg-white/90 backdrop-blur rounded-2xl shadow-xl p-8 mb-12 w-full mx-auto mt-10 max-w-lg border border-blue-100">
-            <h2 class="text-center text-3xl forn-semibold mb-6 text-blue-600">Add User</h2>
-            <div>
-                <label class ="block text-gray-700 font-medium mb-2" for="name">Name:</label>
-                <input class="outline-none w-full px-4 py-2 border-blue-200 border rounded-xl focus:ring-2 focus:ring-blue-400 transition" type="text" name="name" placeholder="name" />
-            </div class ="mb-5">
-            <div>
-                <label class ="block text-gray-700 font-medium mb-2" for="role">Role:</label>
-                <input class="outline-none w-full px-4 py-2 border-blue-200 border rounded-xl focus:ring-2 focus:ring-blue-400 transition" type="text" name="role" placeholder="role" />
-            </div class ="mb-5">
-            <div>
-                <label class ="block text-gray-700 font-medium mb-2" for="bio">Bio:</label>
-                <input class="outline-none w-full px-4 py-2 border-blue-200 border rounded-xl focus:ring-2 focus:ring-blue-400 transition" type="text" name="bio" placeholder="bio" />
-            </div class ="mb-5">
-            <div>
-                <label class ="block text-gray-700 font-medium mb-2" for="photourl">Photo Url:</label>
-                <input class="outline-none w-full px-4 py-2 border-blue-200 border rounded-xl focus:ring-2 focus:ring-blue-400 transition" type="text" name="img" placeholder="Img" />
-            </div class ="mb-5">
-            <button >Create Card</button>
-        </form>
-        <script src="script.js"></script>
-</body>
+      <button
+        class="w-full bg-gradient-to-br from-blue-600 to-purple-600 hover:from-purple-600 hover:to-blue-600 transition text-white py-4 font-semibold shadow-lg rounded-lg hover:shadow-2x text-xl"
+      >
+        Create Card
+      </button>
+    </form>
 
+  <div class="users grid gird-cols-1 md:gird-cols-3">
+    <!-- <div class=" card max-w-1/4 w-full text-center border-2 border-blue-300 rounded-2xl p-8 my-4 mx-4 shadow-xl">
+      <img src="https://i.pinimg.com/736x/df/c7/68/dfc7686278f27c89a680cb3746e61b5c.jpg" 
+      alt="image"
+      class=" w-72 h-72 object-cover rounded-full border-2 bborder-blue-200 drop-shadow-xl"/>
+      <h2 class="text-3xl test-slate-500 my-2">palak's cow</h2>
+      <p class="text-xl text-slate-600 my-2">Developer</p>
+      <p class="text-lg text-slate-500 my-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit.  
+        suscipit, mollitia a fuga minus quidem eaque facilis! Obcaecati.</p>
+    </div> -->
+  </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
